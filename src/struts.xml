@@ -13,6 +13,25 @@
          class="com.practice.AddStudentAction">
          <result name="success" type="redirect">/success.jsp</result>
       </action>
+      
+      <action name="authenticate" method="execute"
+         class="com.practice.AuthenticateAction">
+         <result name="success" type="redirect">/welcome.jsp</result>
+         <result name="failure" type="redirect">/home.jsp</result>     
+         
+      </action>
+      
+      <action name="addCustomer" method="execute"
+         class="com.practice.AddCustomerAction">
+         <result name="success" type="redirect">/success.jsp</result>
+      </action>
+      
+       <action name="addParticipant" method="execute"
+         class="com.practice.AddParticipantAction">
+         <result name="success" type="redirect">/success.jsp</result>
+      </action>
+      
+      
 
       <action name="listStudents" method="listStudents"
          class="com.practice.AddStudentAction">

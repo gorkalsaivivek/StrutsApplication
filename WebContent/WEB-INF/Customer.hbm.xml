@@ -6,17 +6,17 @@
 	table="customer" catalog="mkyong">
 
         <id name="customerId" type="java.lang.Long">
-            <column name="CUSTOMER_ID" />
+            <column name="CustomerId" />
             <generator class="identity" />
         </id>
-        <property name="name" type="string">
-            <column name="NAME" length="45" not-null="true" />
+        <property name="emailId" type="string">
+            <column name="EmailId" length="45" not-null="true" />
         </property>
-        <property name="address" type="string">
-            <column name="ADDRESS" not-null="true" />
+        <property name="userName" type="string">
+            <column name="UserName" not-null="true" />
         </property>
-        <property name="createdDate" type="timestamp">
-            <column name="CREATED_DATE" length="19" not-null="true" />
+        <property name="password" type="string">
+            <column name="Password" length="20" not-null="true" />
         </property>
     </class>
 </hibernate-mapping>
